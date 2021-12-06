@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		resultDisplay.textContent = cardsWon.length; // display the length of the cardsWon array as the current score
 		if (cardsWon.length === cardArray.length / 2) {
 			// how to tell if all the matches have been found
-			resultDisplay.textContent = 'Congrats! You won!';
+			resultDisplay.textContent = 'Congrats! You won! Refresh the page to play again.';
 		}
 	}
 
