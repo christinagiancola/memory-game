@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	function createBoard() {
 		for (let i = 0; i < cardArray.length; i++) {
 			var card = document.createElement('img'); // makes an element for each image, type of element: img
-			card.setAttribute('src', 'images/blank.jpg'); // takes new img element, specifies name = src and value = *relative url of image*
+			card.setAttribute('src', 'images/blank.jpg'); // takes new img element, specifies name = src, and value = *relative url of image*
 			card.setAttribute('data-id', i); // takes new img element, specifies name = data-id and value = 1-11 as loop executes
 			card.addEventListener('click', flipCard); // executes function flipcard when card is clicked
 			grid.appendChild(card); // all img elements w/ their different ids will be put into the div with class=grid
