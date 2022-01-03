@@ -55,6 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	const grid = document.querySelector('.grid');
 	const resultDisplay = document.querySelector('#result');
+  const winnerDisplay = document.querySelector('#winner');
 	var cardsChosen = [];
 	var cardsChosenId = [];
 	var cardsWon = [];
@@ -95,7 +96,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		resultDisplay.textContent = cardsWon.length; // display the length of the cardsWon array as the current score
 		if (cardsWon.length === cardArray.length / 2) {
 			// how to tell if all the matches have been found
-			resultDisplay.textContent = 'Congrats! You won! Refresh the page to play again.';
+			resultDisplay.textContent = cardsWon.length;
+			winnerDisplay.textContent = 'Congrats! You won!';
 		}
 	}
 
