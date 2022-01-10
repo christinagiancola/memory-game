@@ -3,6 +3,7 @@ html,
 body {
 	height: 100%;
 	font-family: 'Raleway', sans-serif;
+	font-size: 12px;
 }
 
 body {
@@ -19,12 +20,12 @@ body {
 button {
 	font-family: 'Raleway', sans-serif;
 	box-sizing: border-box;
-	border-radius: 10px;
-	width: 140px;
+	border-radius: 1rem;
+	width: 12rem;
 	color: whitesmoke;
 	background-color: rgb(79, 97, 49);
-	padding: 10px;
-	margin-bottom: 10px;
+	padding: 1rem;
+	margin-bottom: 1rem;
 }
 
 .container {
@@ -33,9 +34,9 @@ button {
 	align-items: center;
 	color: rgb(79, 97, 49);
 	background-color: white;
-	border-radius: 10px;
-	box-shadow: 6px 6px 12px #212121, -6px -6px 12px #4d4d4d;
-	padding: 0px 20px;
+	border-radius: 1rem;
+	box-shadow: 0.5rem 0.5rem 1rem #212121, -0.5rem -0.5rem 1rem #4d4d4d;
+	padding: 0px 1rem;
 }
 
 .title {
@@ -51,4 +52,16 @@ button {
 	flex-wrap: wrap;
 	height: 300px;
 	width: 400px;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+	body {
+		font-size: 16px;
+		background-image: none;
+		background: rgb(79, 97, 49);
+	}
+	.container {
+		justify-content: center;
+		height: 70vh;
+	}
 }
